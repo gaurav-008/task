@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 1239px) {
   .featured-container {
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   .featured-header {
     flex-wrap: wrap;
