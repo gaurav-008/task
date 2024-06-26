@@ -1,0 +1,84 @@
+.banner2 {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, #9747ff 0%, #232325 65.35%);
+  width: 427px;
+  height: 417px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+
+  h1 {
+    color: white;
+    margin: 0px;
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  p {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #a3a3b7;
+  }
+
+  .banner2-left {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 165px;
+  }
+  .banner2-left-text {
+    max-width: 224px;
+    margin: 20px 0 0 20px;
+  }
+  .refer {
+    padding: 14px 24px 14px 24px;
+    width: fit-content;
+    gap: 8px;
+    border-radius: 8px;
+    margin-left: 40px;
+    color: black;
+    border: none;
+    background: #39ff88;
+  }
+  .banner2-right {
+    position: relative;
+    top: -277.5px;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner2 {
+    max-width: 300px;
+    min-width: 300px;
+    height: 250px;
+
+    .banner2-left {
+      gap: 30px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 30.62px;
+      letter-spacing: -0.02em;
+    }
+    p {
+      font-size: 12px;
+    }
+   
+    .banner2-right {
+      top: -211.5px;
+    }
+    .banner2-right img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  width: 90px;
+  height: 1132px;
+
+  img {
+    height: 66px;
+    width: 66px;
+  }
+}
+.sidebar-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sidebar-lower {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.documents {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}

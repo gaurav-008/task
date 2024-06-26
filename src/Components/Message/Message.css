@@ -1,0 +1,37 @@
+.centered-message {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.message-container {
+    gap: 8px;
+}
+
+.message-info-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message-info{
+    gap: 4px;
+}
+
+.message-name{
+    color: #A3A3B7;
+}
+
+.message-time{
+    color: #676778;
+}
+
+.message-body {
+    width: 234px;
+    padding: 4px 8px;
+    background-color: #222228;
+    color: #FFFFFF;
+    text-align: left;
+    border-radius: 4px;
+}

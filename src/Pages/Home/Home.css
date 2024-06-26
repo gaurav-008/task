@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  max-width: 100%;
+}
+.banner-container {
+  margin-top: 10px;
+  gap: 12px;
+  display: flex;
+  max-width: 1474;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.banner-container::-webkit-scrollbar {
+  display: none;
+}
+.middle {
+  max-width: calc(100% - 438px);
+  padding: 8px 8px 0 8px;
+}
+@media (max-width: 1000px) {
+  .middle {
+    max-width: 100%;
+  }
+  .container {
+    display: block;
+  }
+}

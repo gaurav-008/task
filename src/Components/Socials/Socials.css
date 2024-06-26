@@ -1,0 +1,15 @@
+.socials {
+  background-color: #16161b;
+  width: 66px;
+  height: 183px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}

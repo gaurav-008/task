@@ -1,0 +1,126 @@
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbox-container {
+  max-width: 332px;
+  max-height: 1132px;
+  width: 100%;
+  background-color: #16161b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  right: 0;
+}
+
+.chatbox-head,
+.chatbox-title,
+.chatbox-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatbox-head {
+  height: 56px;
+  padding: 0 15px;
+}
+
+.chatbox-title {
+  gap: 8px;
+}
+
+.chatbox-info-container {
+  gap: 10px;
+}
+
+.chatbox-info {
+  gap: 6px;
+  background-color: #1a1a20;
+}
+
+.chevron-btn-wrapper {
+  width: 32px;
+  height: 32px;
+  background-color: #363640;
+  border-radius: 8px;
+}
+
+.chatbox-body {
+  height: 998px;
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #1a1a20;
+  padding: 0 15px;
+}
+
+.chatbox-message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* .chatbox-body::before,
+.chatbox-body::after {
+  content: '';
+  position: absolute;
+  left: 937px;
+  right: 0;
+  height: 10%;
+  pointer-events: none;
+}
+
+.chatbox-body::before {
+  top: 125px;
+  max-width: 332px;
+  background: linear-gradient(to bottom, #222228, rgba(255, 255, 255, 0));
+}
+
+.chatbox-body::after {
+  bottom: -193px;
+  max-width: 332px;
+  background: linear-gradient(to top, #222228, rgba(255, 255, 255, 0));
+} */
+
+.chatbox-footer {
+  height: 78px;
+  background-color: #16161b;
+  border-top: 1px solid #29292f;
+  padding: 0 15px;
+}
+
+.chatbox-input {
+  width: 255px;
+  height: 48px;
+  text-indent: 10px;
+  padding-block: 0;
+  padding-inline: 0;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #29292f;
+  background-image: url("../../Assets/smile-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95%;
+}
+
+.submit-btn-wrapper {
+  width: 48px;
+  height: 48px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: linear-gradient(to bottom, #7848ff, #6254ff);
+}
+
+.submit-btn {
+  background-color: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+  .chatbox-container {
+    display: none;
+  }
+}

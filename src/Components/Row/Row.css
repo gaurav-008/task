@@ -1,0 +1,185 @@
+.main {
+  height: max-content;
+  background-color: #1a1a20;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 5px;
+}
+
+.left {
+  background-color: #29292f;
+  min-height: 81px;
+  max-width: 250px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.left-group {
+  margin-left: 10px;
+}
+
+.right-group {
+  margin-right: 10px;
+}
+
+.left-group img {
+  height: 50px;
+  width: 45px;
+  object-fit: cover;
+}
+.right-group img {
+  height: 50px;
+  width: 45px;
+  object-fit: cover;
+}
+
+.left .crossed-swords img {
+  width: 24px;
+  height: 24px;
+}
+.left img:first-child {
+  margin-right: -20px;
+}
+.left-group,
+.right-group {
+  display: flex;
+}
+
+.mid {
+  flex: 1;
+  height: 97px;
+  border-radius: 15px;
+  background: linear-gradient(
+    to right,
+    #229952 -41%,
+    transparent 25% 80%,
+    #229952 132%
+  );
+  position: relative;
+  display: flex;
+  gap: 2.5%;
+  overflow: hidden;
+}
+.mid img {
+  width: 108px;
+  height: 86px;
+}
+.mid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  padding: 1.5px;
+  background: linear-gradient(
+    to right,
+    #39ff88 -23%,
+    transparent 28% 52%,
+    #39ff88 126%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.right {
+  width: 119px;
+  color: #fff;
+  font-family: "Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.right > span {
+  margin-left: 20px;
+}
+.afterDecimal {
+  color: #676778;
+}
+
+.right .button {
+  width: 119px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #7848ff, #6254ff);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .left {
+    order: 2;
+    max-width: 160px;
+    max-height: 43px;
+    min-height: unset;
+    margin: auto;
+    border-radius: 8px;
+  }
+  .left-group img {
+    height: 35px;
+    width: 35px;
+  }
+  .right-group img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .left .crossed-swords img {
+    width: 16px;
+    height: 16px;
+  }
+  .mid {
+    order: 1;
+    overflow-x: hidden;
+    min-width: 100%;
+    max-height: 54px;
+    gap: 3.5%;
+    border-radius: 7px;
+  }
+  .mid::before {
+    border-radius: 8px;
+  }
+  .right {
+    order: 3;
+    max-width: 160px;
+    flex-direction: row;
+    min-height: 43px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+  }
+  .right > span {
+    margin-left: 0;
+    font-size: 15px;
+    margin-right: 6px;
+  }
+  .mid img {
+    width: 57px;
+    height: 46px;
+  }
+  .right .button {
+    min-width: 98px;
+    min-height: 36px;
+  }
+}
