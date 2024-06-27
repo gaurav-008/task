@@ -26,7 +26,7 @@
   scroll-behavior: smooth;
 }
 .live-drop::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
 }
 
 @media screen and (max-width: 1000px){
